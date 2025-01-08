@@ -127,6 +127,9 @@ class AdminController extends BaseController
     {
         if ($layout) View::instance()->engine()->layout('/layout/default');
         View::assign($vars);
+        if (empty($template)) {
+            $template = strtolower(str_replace('.', '/', $this->request->pathinfo()));
+        }
         return View::fetch($template);
     }
 
