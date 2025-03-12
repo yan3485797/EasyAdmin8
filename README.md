@@ -41,22 +41,16 @@
 
 > EasyAdmin8 使用 Composer 来管理项目依赖。因此，在使用 EasyAdmin8 之前，请确保你的机器已经安装了 Composer。
 
-### 通过一键安装命令
-
-```
-if [ -f /usr/bin/curl ];then curl -sSO https://easyadmin8.top/auto-install-EasyAdmin8.sh;else wget -O auto-install-EasyAdmin8.sh https://easyadmin8.top/auto-install-EasyAdmin8.sh;fi;bash auto-install-EasyAdmin8.sh
-```
-
 ### 通过`git`下载安装包，`composer`安装依赖包
 
 ```
 1.下载安装包
 
-  git clone https://github.com/EasyAdmin8/EasyAdmin8
+  git clone -b v8.0 https://github.com/EasyAdmin8/EasyAdmin8
 
   或者
 
-  git clone https://gitee.com/EasyAdmin8/EasyAdmin8
+  git clone -b v8.0 https://gitee.com/EasyAdmin8/EasyAdmin8
 
 2.安装依赖包（确保 PHP 版本 >= 8.0）
 
