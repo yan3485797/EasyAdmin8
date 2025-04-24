@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{$config.title|default='ThinkPHP 日志查看器'}</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{$config.layui_css_path|default='//unpkg.com/layui/dist/css/layui.css'}" rel="stylesheet">
+    <script src="{$config.layui_js_path|default='//unpkg.com/layui/dist/layui.js'}"></script>
+    {notempty name="config.customize.css"}
+    <link href="{$config.customize.css}" rel="stylesheet">
+    {/notempty}
+    {notempty name="config.customize.js"}
+    <script src="{$config.customize.js}"></script>
+    {/notempty}
+
+</head>
+<body>
+
+{__CONTENT__}
+
+</body>
+</html>
